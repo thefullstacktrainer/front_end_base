@@ -1,0 +1,12 @@
+What is the Web? 
+Basic history of the web.
+Difference between the internet and the web.
+Explain browsers and how they function.
+
+
+What is a Web Application
+Differentiate between static websites and dynamic web applications.
+Explain real-world examples (e.g., Twitter vs a static blog).
+
+Explain the popularity of mobile apps and why businesses are shifting to mobile-first approaches.?
+
