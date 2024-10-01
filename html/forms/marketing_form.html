@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Form</title>
+    <style>
+        .text {
+            background-color: oldlace;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Create a New Marketing Campaign</h2>
+
+        <form action="/url" id="campaign">
+            <label for="name">Campaign Name:</label>
+            <input type="text" class="text" id="name" placeholder="Enter Campaign Name" required maxlength="100">
+            <br><br>
+            <label for="campaignType">Campaign Type:</label>
+            <select name="campaignType" id="campaignType" required>
+                <option value="">--Select Campaign Name--</option>
+                <option value="search">Search Ads</option>
+                <option value="display" disabled>Display Ads</option>
+                <option value="video">Video Ads</option>
+                <option value="social">Social Ads</option>
+            </select>
+            <br><br>
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" placeholder="Enter your budget" name="budget" required min="1000"
+                step="100">
+            <br><br>
+            <label for="startDate">Start Date:</label>
+            <input type="date" name="startDate" id="startDate" required>
+            <br><br>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" name="endDate" id="endDate" required>
+            <br><br>
+
+            <label>Targeted Audience:</label>
+            <input type="checkbox" name="audi" id="audi1" value="18-25">
+            <label for="audi1">18 - 25</label>
+            <input type="checkbox" name="audi" id="audi2" value="26-35">
+            <label for="audi2">26 - 35</label>
+            <input type="checkbox" name="audi" id="audi3" value="36-45">
+            <label for="audi3">36 - 45</label>
+            <input type="checkbox" name="audi" id="audi4" value="46+">
+            <label for="audi4"> Above 45</label>
+            <br><br>
+
+            <label>Target Gender</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="platform">Advertising Platform:</label>
+            <select name="platform" id="platform" required multiple>
+                <option value="">--Select Platform --</option>
+                <option value="google" disabled>Google Ads</option>
+                <option value="fb">FB Ads</option>
+                <option value="instagram">Instagram Ads</option>
+                <option value="linkedin">LinkedIn Ads</option>
+            </select>
+            <br><br>
+
+            <button type="button">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
