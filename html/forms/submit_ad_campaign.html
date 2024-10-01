@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Campaign Submission</title>
+</head>
+<body>
+
+    <h1>Submit Your Ad Campaign</h1>
+
+    <!-- Ad Campaign Submission Form -->
+    <form id="adCampaignForm" name="adForm" action="https://ad-client-server.com/submit" 
+          method="POST" target="_blank" autocomplete="on" novalidate accept-charset="UTF-8">
+        
+        <!-- Campaign Name (Text Input with Autocomplete) -->
+        <label for="campaignName">Campaign Name:</label><br>
+        <input type="text" id="campaignName" name="campaignName" placeholder="Enter your campaign name" required autocomplete="on"><br><br>
+
+        <!-- Advertiser Email (With Autocomplete) -->
+        <label for="advertiserEmail">Advertiser Email:</label><br>
+        <input type="email" id="advertiserEmail" name="advertiserEmail" placeholder="Enter your email" required autocomplete="on"><br><br>
+
+        <!-- Ad Budget (Number Input) -->
+        <label for="adBudget">Ad Budget (USD):</label><br>
+        <input type="number" id="adBudget" name="adBudget" placeholder="Enter your budget in USD" min="100" required><br><br>
+
+        <!-- Ad Content (Textarea for Multi-line Input) -->
+        <label for="adContent">Ad Content:</label><br>
+        <textarea id="adContent" name="adContent" placeholder="Describe your ad content here" rows="5" cols="40" required></textarea><br><br>
+
+        <!-- Ad Category (Dropdown/Select) -->
+        <label for="adCategory">Select Ad Category:</label><br>
+        <select id="adCategory" name="adCategory" required>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
+            <option value="automotive">Automotive</option>
+            <option value="food">Food & Beverage</option>
+            <option value="travel">Travel</option>
+        </select><br><br>
+
+        <!-- Ad Targeting Options (Checkboxes) -->
+        <label for="targeting">Targeting Options:</label><br>
+        <input type="checkbox" id="ageGroup" name="targetingOptions" value="ageGroup">
+        <label for="ageGroup">Age Group</label><br>
+        <input type="checkbox" id="location" name="targetingOptions" value="location">
+        <label for="location">Location</label><br>
+        <input type="checkbox" id="interests" name="targetingOptions" value="interests">
+        <label for="interests">Interests</label><br><br>
+
+        <!-- Upload Ad Creative (File Upload) -->
+        <label for="adCreative">Upload Ad Creative (Image/Video):</label><br>
+        <input type="file" id="adCreative" name="adCreative" accept="image/*,video/*" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Campaign</button>
+
+        <!-- Reset Button -->
+        <button type="reset">Reset Form</button>
+    </form>
+
+</body>
+</html>

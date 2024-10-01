@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ad Campaign Metrics</title>
+</head>
+<body>
+
+<h1>Ad Campaign Metrics and Details</h1>
+
+<!-- Hidden input to store campaign ID -->
+<input type="hidden" name="campaignID" value="12345">
+
+<!-- Form to display and collect metrics -->
+<form action="/submit-metrics" method="POST">
+
+    <!-- Text input for Campaign Name -->
+    <label for="campaignName">Campaign Name:</label><br>
+    <input type="text" id="campaignName" name="campaignName" placeholder="Enter Campaign Name" value="Summer Sale Campaign" required><br><br>
+
+    <!-- Password input for Account Access (hypothetical example) -->
+    <label for="accountPassword">Account Password:</label><br>
+    <input type="password" id="accountPassword" name="accountPassword" placeholder="Enter your password" required><br><br>
+
+    <!-- File input to upload campaign report -->
+    <label for="reportFile">Upload Campaign Report:</label><br>
+    <input type="file" id="reportFile" name="reportFile" accept=".pdf, .xls, .xlsx"><br><br>
+
+    <!-- Textarea for Campaign Summary -->
+    <label for="campaignSummary">Campaign Summary:</label><br>
+    <textarea id="campaignSummary" name="campaignSummary" placeholder="Enter a brief summary of the campaign" rows="5" cols="40">This campaign focuses on promoting our summer sale.</textarea><br><br>
+
+    <!-- Radio buttons for Platform Selection -->
+    <p>Select Advertising Platform:</p>
+    <input type="radio" id="googleAds" name="adPlatform" value="Google Ads" checked>
+    <label for="googleAds">Google Ads</label><br>
+    <input type="radio" id="metaAds" name="adPlatform" value="Meta Ads">
+    <label for="metaAds">Meta Ads (Facebook/Instagram)</label><br><br>
+
+    <!-- Checkboxes for Metrics to Display -->
+    <p>Select Metrics to Display:</p>
+    <input type="checkbox" id="impressions" name="metrics" value="Impressions" checked>
+    <label for="impressions">Impressions</label><br>
+    <input type="checkbox" id="clicks" name="metrics" value="Clicks" checked>
+    <label for="clicks">Clicks</label><br>
+    <input type="checkbox" id="conversions" name="metrics" value="Conversions">
+    <label for="conversions">Conversions</label><br>
+    <input type="checkbox" id="ctr" name="metrics" value="CTR">
+    <label for="ctr">Click-Through Rate (CTR)</label><br><br>
+
+    <!-- Dropdown select for Date Range -->
+    <label for="dateRange">Select Date Range:</label><br>
+    <select id="dateRange" name="dateRange">
+        <option value="last7days" selected>Last 7 Days</option>
+        <option value="last14days">Last 14 Days</option>
+        <option value="last30days">Last 30 Days</option>
+        <option value="custom">Custom Range</option>
+    </select><br><br>
+
+    <!-- Submit and Reset buttons -->
+    <input type="submit" value="View Metrics">
+    <input type="reset" value="Reset Form">
+
+</form>
+
+</body>
+</html>
