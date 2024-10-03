@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="" method="post">
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" required>
+                <br>
+                <br>
+                <label for="range">Range</label>
+                <input type="range" id="range" name="price_range" min="100" max="5000" value="200" step="100">
+
+                <br><br>
+                <label for="color">Pick a color</label>
+                <input type="color" id="color" name="color" value="#007744">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <br><br><br>
+        <section>
+            <div draggable="true" style="width: 100px; height: 100px;background-color: aqua;">Draggable</div>
+            <div draggable="true" style="width: 100px; height: 100px;background-color: rgb(99, 62, 21);">Google Ad</div>
+            <div draggable="true" style="width: 100px; height: 100px;background-color: rgb(106, 186, 132);">Fb Ad</div>
+            <div draggable="true" style="width: 100px; height: 100px;background-color: rgb(102, 7, 179);">Linkedin Ad
+            </div>
+            <div draggable="true" style="width: 100px; height: 100px;background-color: rgb(22, 12, 152);">Twitter Ad
+            </div>
+        </section>
+
+        <section>
+            <div style="background-color: blanchedalmond;">
+                <canvas id="canvas_place" width="400" height="200"></canvas>
+                <script>
+                    var canvas = document.getElementById("canvas_place");
+                    var ctx = canvas.getContext('2d');
+                    ctx.fillStyle='red';
+                    ctx.fillRect(100,100,100,100)
+                </script>
+            </div>
+        </section>
+
+        <section>
+            <button onclick="getLocation()">Get My Locn</button>
+            <p id="location"></p>
+            
+        </section>
+        <script>
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    console.log("There is no support")
+                }
+            }
+            function showPosition(position){
+                document.getElementById("location").innerHTML =
+                 "Latitude: "+position.coords.latitude+ "<br> Longitude : "+position.coords.longitude;
+            }
+        </script>
+
+    </main>
+</body>
+
+</html>
