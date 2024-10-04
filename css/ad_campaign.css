@@ -10,3 +10,12 @@
     font-size: 14px;
 }
 
+/* Adjacent Sibling Selector ( + ) */
+h2 + p {
+font-weight: bold;
+}
+
+
+p + button{
+    color: blue;
+}
