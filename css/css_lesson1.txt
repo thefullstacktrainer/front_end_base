@@ -22,7 +22,18 @@ The Relationship Selector (Combinators)
 
 Pseudo Selector
 1.Pseudo Class Selector ( : )
+- hover
+- focus
+- active
+- nth-child(n)
+- first-child
+- last-child
+- visited
 2.Pseudo Element Selector ( :: )
+- before
+- after
+- first-line
+- first-letter
 
 Group Selector
 Specificity & When To Use Selectors
