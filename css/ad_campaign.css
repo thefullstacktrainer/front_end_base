@@ -39,3 +39,8 @@ h2 ~ p {
 p, h2 {
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
+
+input[type="button"]{
+    color: hsla(224, 20%, 78%, 0.796);
+    background-color: #4824d7;
+}

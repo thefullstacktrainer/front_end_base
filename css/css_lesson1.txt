@@ -38,5 +38,11 @@ Pseudo Selector
 Group Selector
 
 Specificity & When To Use Selectors
+1. Inline
+2. Ids
+3. Classes, Attributes, Pseudo-Classes
+4. Elements and Pseudo-Elements
+
 What are Properties?
+
 The CSS General Rule
