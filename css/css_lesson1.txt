@@ -1,7 +1,7 @@
 What is CSS
 Why to use CSS?
 How is CSS Used?
-1. Inlince CSS
+1. Inline CSS
 2. Internal CSS
 3. External CSS
 Creating and Linking a CSS StyleSheet
