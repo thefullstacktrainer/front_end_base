@@ -1,5 +1,11 @@
 /* Descendant Selector (  ) */
-.campaign p{
+/* .campaign p{
+    color: #ce4242;
+    font-size: 14px;
+} */
+
+/* Child Selector ( > ) */
+.campaign > p{
     color: #ce4242;
     font-size: 14px;
 }
