@@ -44,5 +44,28 @@ Specificity & When To Use Selectors
 4. Elements and Pseudo-Elements
 
 What are Properties?
+Text Properties
+- color
+- font-family
+- font-size
+- line-height
+- text-aling
+
+Box Model Properties
+- margin
+- padding
+- border
+- width and height
+
+Background Properties
+- background-color
+- background-image
+- background-size
+- background-repeat
+
+Positioning Properties
+- position
+- top, right, left and bottom
+- z-index
 
 The CSS General Rule
