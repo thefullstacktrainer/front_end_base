@@ -24,3 +24,8 @@ p + button{
 h2 ~ p {
     color: grey !important;
 }
+
+/* Pseudo Class Selector ( : ) */
+.view-details:hover{
+    font-size: 16px;
+}

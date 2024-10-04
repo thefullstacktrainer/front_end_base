@@ -21,6 +21,9 @@ The Relationship Selector (Combinators)
 4. General Sibling Selector ( ~ )
 
 Pseudo Selector
+1.Pseudo Class Selector ( : )
+2.Pseudo Element Selector ( :: )
+
 Group Selector
 Specificity & When To Use Selectors
 What are Properties?
