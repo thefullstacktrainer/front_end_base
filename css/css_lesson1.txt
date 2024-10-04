@@ -1,0 +1,22 @@
+What is CSS
+Why to use CSS?
+How is CSS Used?
+1. Inlince CSS
+2. Internal CSS
+3. External CSS
+Creating and Linking a CSS StyleSheet
+How To Test A Stylesheet
+
+Selectors:
+What is a selector?
+The Universal/Global Selector
+The Tag/Element Selector
+The ID Selector     
+The Class Selector
+The Attribute Selector
+The Relationship Selector
+Pseudo Selector
+Group Selector
+Specificity & When To Use Selectors
+What are Properties?
+The CSS General Rule
