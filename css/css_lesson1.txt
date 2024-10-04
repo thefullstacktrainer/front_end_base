@@ -14,7 +14,12 @@ The Tag/Element Selector
 The ID Selector     
 The Class Selector
 The Attribute Selector
-The Relationship Selector
+The Relationship Selector (Combinators)
+1. Descendant Selector (  )
+2. Child Selector ( > )
+3. Adjacent Sibling Selector ( + )
+4. General Sibling Selector ( ~ )
+
 Pseudo Selector
 Group Selector
 Specificity & When To Use Selectors
