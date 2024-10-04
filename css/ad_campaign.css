@@ -20,3 +20,7 @@ p + button{
     color: blue;
 }
 
+/* General Sibling Selector ( ~ ) */
+h2 ~ p {
+    color: grey !important;
+}
