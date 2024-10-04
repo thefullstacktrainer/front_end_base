@@ -27,5 +27,32 @@ section{
 /* ID selector */
 #campaign-header{
     background-color: #0073e6;
+    color: rgb(199, 42, 42);
+}
+
+/* #one{
+    background-color: #ff93e6;
+    border: 1px solid #1a0809;
+    padding: 20px;
+}
+
+#two{
+    background-color: #ff93e6;
+    border: 1px solid #1a0809;
+    padding: 20px;
+} */
+
+/* Class Selector */
+.campaign-box {
+    background-color: #4a163e;
+    border: 1px solid #1a0809;
+    padding: 20px;
+}
+
+/* Attribute Selector */
+input[type="submit"]{
+    background-color: #0073e6;
     color: white;
+    border: none;
+    padding: 10px 20px;
 }
